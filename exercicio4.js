@@ -951,36 +951,19 @@ const gods = [
       features: [],
     },
     {
-      name: "Zhong Kui",
-      id: "zhongkui",
-      class: "Mage",
-      pantheon: "Chinese",
-      damage_type: "Magical",
-      attack_type: ["Ranged"],
-      roles: ["Mid", "Solo"],
-      features: [],
+    	name: "Zhong Kui",
+    	id: "zhongkui",
+    	class: "Mage",
+    	pantheon: "Chinese",
+    	damage_type: "Magical",
+    	attack_type: ["Ranged"],
+    	roles: ["Mid", "Solo"],
+    	features: [],
     },
 ];
 
-//Q1
-//gods.forEach(god=>console.log(god.name,god.features.length));
-
-//Q2
-/*for(let i=0; i<gods.length; i+=1){
-  if(gods[i].roles.includes("Mid")){
-    console.log(gods[i]);
-  }
-}*/
-
-//Q3
-/*gods.sort((a,b)=>{
-  return (a.pantheon>b.pantheon) ? 1 : ((b.pantheon > a.pantheon) ? -1 : 0);
-});
-console.log(gods);*/
-
 //Q4
-/*novoArray = [gods.length]
-for(let j=0; j<gods.length; j+=1){
-    novoArray[j] = (gods[j].name+'('+gods[j].class+')');
-    console.log(novoArray[j]+'\n');
-}*/
+let narry = [];
+for (const obj of deuses) {
+  destinationArray.push(copy(obj));
+}
