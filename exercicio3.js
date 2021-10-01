@@ -962,4 +962,7 @@ const gods = [
     },
 ];
 
-deuses.splice(0[,])
+gods.sort((a,b)=>{
+  return (a.pantheon>b.pantheon) ? 1 : ((b.pantheon > a.pantheon) ? -1 : 0);
+});
+console.log(gods);

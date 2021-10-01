@@ -973,7 +973,14 @@ const gods = [
 }*/
 
 //Q3
-gods.sort((a,b)=>{
+/*gods.sort((a,b)=>{
   return (a.pantheon>b.pantheon) ? 1 : ((b.pantheon > a.pantheon) ? -1 : 0);
 });
-console.log(gods);
+console.log(gods);*/
+
+//Q4
+let narry = [];
+for (const obj of sourceArray) {
+  destinationArray.push(copy(obj));
+}
+
