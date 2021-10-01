@@ -951,7 +951,7 @@ const gods = [
       features: [],
     },
     {
-    	name: "Zhong Kui",
+      name: "Zhong Kui",
       id: "zhongkui",
       class: "Mage",
       pantheon: "Chinese",
@@ -962,4 +962,4 @@ const gods = [
     },
 ];
 
-gods.forEach(god=>console.log(god.name,god.features.length));
+deuses.splice(0[,])

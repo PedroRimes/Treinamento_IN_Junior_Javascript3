@@ -951,7 +951,7 @@ const gods = [
       features: [],
     },
     {
-    	name: "Zhong Kui",
+      name: "Zhong Kui",
       id: "zhongkui",
       class: "Mage",
       pantheon: "Chinese",
@@ -962,4 +962,8 @@ const gods = [
     },
 ];
 
-gods.forEach(god=>console.log(god.name,god.features.length));
+for(let i=0; i<gods.length; i+=1){
+  if(gods[i].roles.includes("Mid")){
+    console.log(gods[i]);
+  }
+}

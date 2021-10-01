@@ -961,3 +961,19 @@ const gods = [
       features: [],
     },
 ];
+
+//Q1
+//gods.forEach(god=>console.log(god.name,god.features.length));
+
+//Q2
+/*for(let i=0; i<gods.length; i+=1){
+  if(gods[i].roles.includes("Mid")){
+    console.log(gods[i]);
+  }
+}*/
+
+//Q3
+gods.sort((a,b)=>{
+  return (a.pantheon>b.pantheon) ? 1 : ((b.pantheon > a.pantheon) ? -1 : 0);
+});
+console.log(gods);
